@@ -5,7 +5,7 @@ from motorFord import *
 from cocheFord import *
 from chasisFord import *
 
-class CocheFordF(Fabrica):
+class FordFabrica(Fabrica):
 
     def crear_motor(self):
         return MotorFord()

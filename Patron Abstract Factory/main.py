@@ -3,10 +3,10 @@ from cliente import *
 
 def main():
     c = Cliente()
-    print("Fabrica Toyota: ")
-    c.accion_cliente(CocheFordF())
-    print("\nFabrica Ford: ")
-    c.accion_cliente(CocheToyotaF())
+    print("Fabrica Ford: ")
+    c.accion_cliente(FordFabrica())
+    print("\nFabrica Toyota: ")
+    c.accion_cliente(ToyotaFabrica())
 
 if __name__=="__main__":
     main()

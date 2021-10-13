@@ -3,7 +3,7 @@ from abc import ABC, abstractmethod
 
 class Fabrica():
     @abstractmethod
-    def crear_choche(self):
+    def crear_coche(self):
         pass
 
     @abstractmethod
