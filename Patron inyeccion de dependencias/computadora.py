@@ -1,7 +1,3 @@
-from mouse import *
-from monitor import *
-from teclado import *
-
 class Computadora():
     def __init__(self, monitor, teclado, mouse):
         self._monitor = monitor
