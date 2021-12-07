@@ -1,7 +1,7 @@
 #Abstract Factory
-from abc import ABC, abstractmethod
+from abc import ABCMeta, abstractmethod
 
-class Fabrica():
+class Fabrica(metaclass=ABCMeta):
     @abstractmethod
     def crear_coche(self):
         pass

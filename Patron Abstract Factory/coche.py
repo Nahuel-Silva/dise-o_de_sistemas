@@ -1,7 +1,8 @@
 #ProductB
-from abc import ABC, abstractmethod
+from abc import ABCMeta, abstractmethod
 
-class Coche():
+class Coche(metaclass=ABCMeta):
+    
     @abstractmethod
     def funcion_coche(self):
         pass

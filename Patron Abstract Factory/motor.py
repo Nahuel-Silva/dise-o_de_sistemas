@@ -1,7 +1,7 @@
 #ProductA
-from abc import ABC, abstractmethod
+from abc import ABCMeta, abstractmethod
 
-class Motor():
+class Motor(metaclass=ABCMeta):
     @abstractmethod
     def funcion_motor(self):
         pass
