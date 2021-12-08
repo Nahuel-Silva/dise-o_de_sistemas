@@ -10,7 +10,7 @@ def main():
     sectorCont = SectorCont(2500)
     sectorGerencia = SectorGerencia(4000)
 
-    composite = Composite(0)
+    composite = SectorGeneral(7000)
     composite.add(sectorAdmin)
     composite.add(sectorCajas)
     composite.add(sectorCont)

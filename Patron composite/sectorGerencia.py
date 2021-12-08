@@ -1,4 +1,4 @@
-from composite import *
+from component import Isueldo
 
 class SectorGerencia(Isueldo):
     
