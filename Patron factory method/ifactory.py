@@ -1,7 +1,7 @@
-from abc import ABCMeta, abstractstaticmethod
+from abc import ABCMeta, abstractmethod
 
 class Ifactory(metaclass=ABCMeta):
 
-    @abstractstaticmethod
+    @abstractmethod
     def creador_de_triangulos(self, ladoA, ladoB, ladoC):
         pass
