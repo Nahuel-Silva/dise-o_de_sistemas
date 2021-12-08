@@ -1,8 +1,13 @@
-class Teclado():
+from abc import ABCMeta, abstractmethod
+
+class Teclado(metaclass=ABCMeta):
+
+    @abstractmethod
     def __init__(self, marca, tipo):
         self._marca = marca
         self._tipo = tipo
 
+    @abstractmethod
     def teclado(self):
         pass
 

@@ -1,8 +1,13 @@
-class Mouse():
+from abc import ABCMeta, abstractmethod
+
+class Mouse(metaclass=ABCMeta):
+
+    @abstractmethod
     def __init__(self, marca, tipo):
         self._marca = marca
         self._tipo = tipo
     
+    @abstractmethod
     def mouse(self):
         pass
 

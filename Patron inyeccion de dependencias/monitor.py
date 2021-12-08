@@ -1,8 +1,13 @@
-class Monitor():
+from abc import ABCMeta, abstractmethod
+
+class Monitor(metaclass=ABCMeta):
+
+    @abstractmethod
     def __init__(self, pulgadas, marca):
         self._pulgadas = pulgadas
         self._marca = marca
 
+    @abstractmethod
     def monitor(self):
         pass
 
