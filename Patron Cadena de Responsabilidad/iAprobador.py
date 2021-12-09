@@ -1,12 +1,11 @@
-from abc import abstractstaticmethod
+from abc import ABCMeta, abstractmethod
 
-
-class IAprobador():
+class IAprobador(metaclass=ABCMeta):
             
-    @abstractstaticmethod
+    @abstractmethod
     def set_next(self):
         pass
 
-    @abstractstaticmethod
+    @abstractmethod
     def solicitudPrestamo(self, monto):
         pass

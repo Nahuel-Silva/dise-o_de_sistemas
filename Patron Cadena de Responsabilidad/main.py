@@ -6,9 +6,25 @@ from director import *
 
 if __name__=="__main__":
 
-    banco = Banco()
+    ejecutivoCuenta = EjecutivoCuenta()
+    liderTeamEjecutivo = LiderEjecutivo()
+    gerente = Gerente()
+    director = Director()
 
-    monto = 150000
+    ejecutivoCuenta.set_next(liderTeamEjecutivo)
+    liderTeamEjecutivo.set_next(gerente)
+    gerente.set_next(director)
 
-    banco.ejecutivoCuenta.solicitudPrestamo(monto)
+    monto = 10000000
+
+    liderTeamEjecutivo.solicitudPrestamo(monto)
+
+    #Si utilizo banco utilizo lo de abajo
+
+    # banco = Banco()
+
+    # monto = 150000
+
+    # banco.ejecutivoCuenta.solicitudPrestamo(monto)
+
 

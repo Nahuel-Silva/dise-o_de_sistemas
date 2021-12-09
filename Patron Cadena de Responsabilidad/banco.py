@@ -6,11 +6,11 @@ from director import *
 class Banco():
 
     def __init__(self):
-        self.ejecutivoCuenta = EjecutivoCuenta()
-        self.liderTeamEjecutivo = LiderEjecutivo()
-        self.gerente = Gerente()
-        self.director = Director()
+        self._ejecutivoCuenta = EjecutivoCuenta()
+        self._liderTeamEjecutivo = LiderEjecutivo()
+        self._gerente = Gerente()
+        self._director = Director()
 
-        self.ejecutivoCuenta.set_next(self.liderTeamEjecutivo)
-        self.liderTeamEjecutivo.set_next(self.gerente)
-        self.gerente.set_next(self.director)
+        self._ejecutivoCuenta.set_next(self.liderTeamEjecutivo)
+        self._liderTeamEjecutivo.set_next(self.gerente)
+        self._gerente.set_next(self.director)
